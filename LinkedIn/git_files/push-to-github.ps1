@@ -69,7 +69,7 @@ git add LinkedIn/ 2>&1 | Out-Null
 $status = git status --porcelain
 if ($status) {
     Write-Host "Committing changes..." -ForegroundColor Yellow
-    git commit -m "Update LinkedIn folder: infrastructure, flows, and SDLC documents"
+    git commit -m "updated the LinkedIn folder with the initial setup"
     if ($LASTEXITCODE -ne 0) {
         Write-Host "ERROR: Failed to commit!" -ForegroundColor Red
         exit 1
